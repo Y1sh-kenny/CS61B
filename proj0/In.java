@@ -370,53 +370,32 @@ public final class In {
         scanner.close();  
     }
 
-    /**
-     * Reads all ints from a file 
-     * @deprecated Clearer to use 
-     * <tt>new In(filename)</tt>.{@link #readAllInts()}
-     */
+    
     public static int[] readInts(String filename) {
         return new In(filename).readAllInts();
     }
 
-   /**
-     * Reads all doubles from a file
-     * @deprecated Clearer to use 
-     * <tt>new In(filename)</tt>.{@link #readAllDoubles()}
-     */
+   
     public static double[] readDoubles(String filename) {
         return new In(filename).readAllDoubles();
     }
 
-   /**
-     * Reads all strings from a file
-     * @deprecated Clearer to use 
-     * <tt>new In(filename)</tt>.{@link #readAllStrings()}
-     */
+  
     public static String[] readStrings(String filename) {
         return new In(filename).readAllStrings();
     }
 
-    /**
-     * Reads all ints from stdin 
-     * @deprecated Clearer to use {@link StdIn#readAllInts()}
-     */
+    
     public static int[] readInts() {
         return new In().readAllInts();
     }
 
-   /**
-     * Reads all doubles from stdin
-     * @deprecated Clearer to use {@link StdIn#readAllDoubles()}
-     */
+   
     public static double[] readDoubles() {
         return new In().readAllDoubles();
     }
 
-   /**
-     * Reads all strings from stdin
-     * @deprecated Clearer to use {@link StdIn#readAllStrings()}
-     */
+   
     public static String[] readStrings() {
         return new In().readAllStrings();
     }
